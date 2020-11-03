@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Welcome To Monarch</title>
+
+   <link rel="icon"  type="image/ico" href="img/logo-modal.png"> <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mystyle-coman.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+     <link href="css/admin-style.css" rel="stylesheet">
+      <link href="css/datatables.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+     <nav class="navbar-default navbar-expand-lg  navbar-static-side left-main-menu" role="navigation">
+         <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+               <li class="nav-header">
+                  <div class="dropdown profile-element">
+                     <div class="logo-panel text-center float-n">
+                        <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                     </div>
+                  </div>
+                  <div class="logo-element">
+                     <a href="dashboard.html"> <img src="img/logo-modal.png" alt=""></a>
+                  </div>
+               </li>
+               <li>
+                  <a href="dashboard.html" title="Dashboard"><i class="fa fa-tachometer" aria-hidden="true"></i> <span class="nav-label">Dashboard</span></a>
+               </li>
+               <li >
+                  <a href="events.html" title="Events"><i class="fa fa-calendar" aria-hidden="true"></i> <span class="nav-label">Event Calender</span></a>
+               </li>
+               <li>
+                  <a href="physicians.html"  title="Physicians" class="d-flex-center"><i class="fa fa-medkit" aria-hidden="true"></i> <span class="nav-label m-t2">Physicians</span></a>
+               </li>
+                 <li  >
+                  <a href="listng-type.html"  title="Care Center" class="d-flex-center"><i class="fa fa-plus-square" aria-hidden="true"></i> <span class="nav-label">Care Center</span></a>
+               </li>
+               
+               <li>
+                  <a href="banner.html" title="Banner" class="d-flex-center"><i class="fa fa-picture-o" aria-hidden="true"></i><span class="nav-label">Banner</span></a>
+               </li>
+               <li class="active">
+                 <a href="event-category.html" title="Event Categories" class="d-flex"><i class="fa fa-th-list" aria-hidden="true"></i><span class="nav-label">Event Categories </span></a>
+               </li>
+
+                        <li >
+                 <a href="care-category.html" title="Care Categories" class="d-flex"><i class="fa fa-list" aria-hidden="true"></i><span class="nav-label">Care Categories </span></a>
+               </li>
+
+               <li>
+                  <a href="notification.html" title="Notification"><i class="fa fa-bell" aria-hidden="true"></i> <span class="nav-label margin-top">Notification
+                  </span></a>
+               </li>
+                <li>
+                  <a href="subscribe.html" title="Subscribe"><i class="fa fa-bell-o" aria-hidden="true"></i><span class="nav-label">Subscribe </span></a>
+               </li>
+                <li>
+                  <a href="unsubscribe.html" title="Unsubscribe"><i class="fa fa-bell-slash-o" aria-hidden="true"></i><span class="nav-label">Unsubscribe </span></a>
+               </li>
+               <li>
+                  <a href="cms-pages.html" title="CMS Pages"><i class="fa fa-file" aria-hidden="true"></i> <span class="nav-label margin-top">CMS Pages</span></a>
+               </li>
+              
+            </ul>
+         </div>
+      </nav>
+        <div id="page-wrapper" class="dark-bg">
+    <div class="row top-menu2">
+               <nav class="navbar navbar-static-top dark-bg-header top-menu" role="navigation" style="margin-bottom: 0px;">
+                  <div class="navbar-header">
+                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                     <!-- <form role="search" class="navbar-form-custom" action="search_results.html"> -->
+                     <!--  <div class="form-group">
+                        <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                        </div>
+                        </form> -->
+                  </div>
+                  <ul class="nav navbar-top-links navbar-right">
+                        <li class="user-info-box welcome tooltipa">
+                            <div class="dropdown d-flex">
+                                <span class="prof-img">
+                                   <a href="profile.html"> <img alt="image"  class="img-back" src="img/user-image.png"></a>
+                                </span>
+                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                    <span class="clear"> <span class="block m-t-xs">
+                                        </span> <span class="text-muted text-xs block">sanyoni<b class="caret"></b></span> </span> </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    
+                                    <!--                            <li><a href="contacts.html">Contacts</a></li>-->
+                                    <li><a href="home-login.html">Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+               </nav>
+            </div>
+        
+    <div class="wrapper wrapper-content">
+
+       <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+               <div class="ibox">
+                    <div class="ibox-content" id="history">
+                        <div class="box-heading">
+                                    <h2>Event Categories </h2>
+                                  </div>
+                       
+                      
+                            <div class="text-right m-b-lg d-flex-right" > 
+                              <div class="upload-btn-wrapper">
+                 <button class="btn btn-primary">Upload CSV</button>
+                   <input type="file" name="myfile" />
+                               </div> 
+                           <button type="submit" class="btn btn-primary m-l-sm"  data-toggle="modal" data-target="#add-cat">Add Category</button></div>
+                                
+                              
+                 <div class="table-responsive coman-table" id="Categories">
+                      <table class="table dataTables-example">
+                        <thead>
+                           <tr>
+                            
+                             <th> ID</th>
+                             <th>Category</th>
+                           
+                            
+                             <th>Actions</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+
+                          <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                            <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                         <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                       <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                        <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                             <tr>
+                            
+                             <td>1</td>
+                             <td>ABC</td>
+                             
+                             
+                           
+                         
+                              <td>
+                              <div class="action-btn">
+                                      
+                                       
+                               <a  data-toggle="modal" data-target="#edit-cat"><i class="fa fa-pencil" aria-hidden="true"></i></a>        <a href="#" data-toggle="modal" data-target="#modal-delete"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                    </div>
+                            </td>
+                           </tr>
+                         
+                         
+                           </tbody>
+                    </table>
+                 </div>
+                       
+                    </div>
+               </div>
+          </div>
+       </div>
+       
+       
+    </div>
+        </div>
+ </div>
+  <div class="modal coman-modal  fade" id="Status-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog modal-sm modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            <h2>Status</h2>
+           <div class="form-group text-left">
+                        <label> <span>Document 1 :</span> Approve</label>
+                        
+                        </div>
+                          <div class="form-group text-left">
+                       <label><span>Document 2 : </span> Reject Image is Blur</label>
+                       
+                        </div>
+                          <div class="form-group  text-left">
+                        <label><span>Document 3 : </span> Approve</label>
+                         
+                        </div>
+           
+          
+             
+        </div>
+      </div>
+    </div>
+     <div class="modal coman-modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            
+             
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h3>Are you sure you want to Delete?</h3>
+            <div class="clearfix">
+                  <button type="submit" class="btn   btn-default m-r-sm" data-dismiss="modal" >No</button>
+                    <button type="submit" class="btn btn-primary"  data-toggle="modal" data-dismiss="modal" data-target="#modal-success">Yes</button>
+                 </div>
+            
+        </div>
+        </div>
+    
+      </div>
+        <div class="modal coman-modal  fade" id="modal-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             <div class="success-msg-icon">
+              <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+                 
+             </div>
+             <h2>Event Categories Deleted successfully !!</h2>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+     <div class="modal coman-modal  fade" id="modal-success-a" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             <div class="success-msg-icon">
+              <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+                 
+             </div>
+               <h2>Updated     successfully !!</h2>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+    <div class="modal coman-modal  fade" id="modal-edit-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             <div class="success-msg-icon">
+              <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+                 
+             </div>
+             <h2>Event Categories Added     successfully !!</h2>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+      <div class="modal coman-modal  fade" id="modal-edita-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             <div class="success-msg-icon">
+              <i class="fa fa-check-circle m-b-0" aria-hidden="true"></i>
+                 
+             </div>
+             <h2>Event Categories Updated successfully !!</h2>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+    <div class="modal coman-modal  fade" id="add-cat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             
+            <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <h2 class="text-center"><b>Add Listing Category</b></h2>
+                                       <input type="text" class="form-control cal-input" placeholder="">
+                                    </div>
+                                   
+                                 </div>
+                                 <div class="text-center m-t-md">
+                                   <button type="submit" class="btn btn-primary" data-toggle="modal" data-dismiss="modal"  data-target="#modal-edit-success">Add </button>
+                                     <button type="submit" class="btn btn-primary m-l-sm" data-dismiss="modal">Cancel</button>
+                                     </div>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+    <div class="modal coman-modal  fade" id="edit-cat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+      <div class="modal-dialog  modal-a" role="document">
+        <div class="modal-content text-center">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+             
+            <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                      <h2 class="text-center"><b>Edit Listing Category</b></h2>
+                                       <input type="text" class="form-control cal-input" placeholder="">
+                                    </div>
+                                   
+                                 </div>
+                                 <div class="text-center m-t-md">
+                                   <button type="submit" class="btn btn-primary" data-toggle="modal" data-dismiss="modal"  data-target="#modal-edit-success">Add </button>
+                                     <button type="submit" class="btn btn-primary m-l-sm" data-dismiss="modal">Cancel</button>
+                                     </div>
+            
+            
+             
+        </div>
+      </div>
+    </div>
+   
+     
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+      <script src="js/plugins/dataTables/datatables.min.js">
+    </script>
+<script>
+      $(document).ready(function(){
+        $('.dataTables-example').DataTable( {
+          columnDefs: [
+   { orderable: false, targets: 2 }
+]
+        }
+                              );
+        /* Init DataTables */
+        
+                         
+      }
+
+                       );
+     
+    </script>
+    
+
+</body>
+</html>
